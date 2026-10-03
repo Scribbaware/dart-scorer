@@ -1,7 +1,7 @@
 # Dart Scorer
 
 Een strakke Android-app om darts bij te houden, gebouwd met Kotlin, Jetpack Compose en Material 3
-(minSdk 26, targetSdk 35). Engels en Nederlands, licht en donker thema.
+(minSdk 26, targetSdk 35). Engels, Nederlands, Duits, Frans en Spaans, licht en donker thema.
 
 ## Spellen
 
@@ -21,7 +21,7 @@ Een strakke Android-app om darts bij te houden, gebouwd met Kotlin, Jetpack Comp
 - **Spel loopt door** — de stand wordt na elke pijl bewaard; sluit Android de app, dan ga je vanaf het
   startscherm verder waar je was.
 - **Scherm blijft aan** tijdens een spel (uit te zetten in Instellingen).
-- **Instellingen** — thema Systeem/Licht/Donker en taal English/Nederlands (standaard de taal van je telefoon).
+- **Instellingen** — thema Systeem/Licht/Donker en taal English/Nederlands/Deutsch/Français/Español (standaard de taal van je telefoon, anders Engels).
 - **Ko-fi** — het koffiekopje op het startscherm en de kaart in Instellingen openen eerst een venster, niet
   direct de website (`https://ko-fi.com/scribba`).
 

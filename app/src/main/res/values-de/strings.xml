@@ -1,0 +1,105 @@
+<resources>
+    <!-- Algemeen -->
+    <string name="back">Zurück</string>
+    <string name="close">Schließen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="home">Startseite</string>
+
+    <!-- Startscherm -->
+    <string name="choose_game">Spiel wählen</string>
+    <string name="game_in_progress">Laufendes Spiel</string>
+    <string name="resume">Weiter</string>
+
+    <!-- Spellen -->
+    <string name="game_501_desc">Der Klassiker. Von 501 genau auf null herunterspielen.</string>
+    <string name="game_301_desc">Die schnellere Variante von 501.</string>
+    <string name="game_cricket">Cricket</string>
+    <string name="game_cricket_desc">Schließe 15 bis 20 und das Bull, punkte auf offenen Zahlen.</string>
+    <string name="game_clock">Around the Clock</string>
+    <string name="game_clock_desc">Triff 1 bis 20 der Reihe nach, dann das Bull.</string>
+    <string name="game_shanghai">Shanghai</string>
+    <string name="game_shanghai_desc">Sieben Runden, pro Runde eine Zielzahl.</string>
+    <string name="game_killer">Killer</string>
+    <string name="game_killer_desc">Werde Killer und nimm deinen Freunden die Leben.</string>
+
+    <string name="rules_x01">Alle beginnen mit der gewählten Punktzahl. Jeder Pfeil wird von deiner Punktzahl abgezogen, und wer zuerst genau null erreicht, gewinnt das Leg. Bei Double Out muss der letzte Pfeil ein Double sein (das Bull zählt als Double 25). Fällst du unter null oder bei Double Out auf 1, ist das ein Bust: Deine Punktzahl springt auf den Stand vom Anfang der Aufnahme zurück. Bei Double In zählen deine Pfeile erst nach deinem ersten Double.</string>
+    <string name="rules_cricket">Nur 15 bis 20 und das Bull zählen. Triff eine Zahl dreimal, um sie zu schließen (ein Double zählt als zwei Treffer, ein Triple als drei). Hast du eine Zahl geschlossen, bringen weitere Treffer Punkte, solange ein Gegner sie noch nicht geschlossen hat. Wer zuerst alles schließt und mindestens so viele Punkte hat wie alle anderen, gewinnt.</string>
+    <string name="rules_clock">Triff die 1, dann die 2, dann die 3 und so weiter bis 20, und schließe mit dem Bull ab (innen oder außen). Jedes Feld der Zahl zählt. Mit \"Double und Triple überspringen\" kommst du mit einem Double zwei Zahlen weiter und mit einem Triple drei. Wer zuerst das Bull trifft, gewinnt.</string>
+    <string name="rules_shanghai">In Runde 1 zählt nur die 1, in Runde 2 nur die 2 und so weiter. Jeder Treffer bringt den Wert mal den Multiplikator. Ein Shanghai (Single, Double und Triple der Zielzahl in einer Aufnahme) gewinnt sofort. Sonst gewinnt die höchste Punktzahl nach der letzten Runde.</string>
+    <string name="rules_killer">Jeder Spieler bekommt eine eigene Zahl. Triff das Double deiner Zahl, um Killer zu werden. Als Killer kostet jedes Double der Zahl eines Gegners ihn ein Leben, aber Vorsicht: Dein eigenes Double kostet dich ein Leben. Wer keine Leben mehr hat, scheidet aus. Wer als Letzter übrig bleibt, gewinnt.</string>
+
+    <!-- Spel instellen -->
+    <string name="players">Spieler</string>
+    <string name="player_default">Spieler</string>
+    <string name="add_player">Spieler hinzufügen</string>
+    <string name="remove_player">Spieler entfernen</string>
+    <string name="shuffle">Mischen</string>
+    <string name="min_players">Für dieses Spiel brauchst du mindestens %d Spieler.</string>
+    <string name="options">Optionen</string>
+    <string name="start_score">Startpunktzahl</string>
+    <string name="double_out">Double Out</string>
+    <string name="double_out_desc">Mit einem Double oder dem Bull beenden</string>
+    <string name="double_in">Double In</string>
+    <string name="double_in_desc">Erst nach dem ersten Double punkten</string>
+    <string name="legs_to_win">Legs zum Sieg</string>
+    <string name="multipliers_skip">Double und Triple überspringen</string>
+    <string name="multipliers_skip_desc">Ein Double bringt dich 2 weiter, ein Triple 3</string>
+    <string name="rounds">Runden</string>
+    <string name="lives">Leben</string>
+    <string name="how_to_play">So wird gespielt</string>
+    <string name="start_game">Spiel starten</string>
+
+    <!-- Tijdens het spel -->
+    <string name="single">Single</string>
+    <string name="double_">Double</string>
+    <string name="treble">Triple</string>
+    <string name="miss">Daneben</string>
+    <string name="undo">Rückgängig</string>
+    <string name="bull">Bull</string>
+    <string name="round">Runde %d</string>
+    <string name="round_of">Runde %1$d von %2$d</string>
+    <string name="leg">Leg %d</string>
+    <string name="legs_won">Legs %d</string>
+    <string name="average">Ø %s</string>
+    <string name="darts_thrown">%d Pfeile</string>
+    <string name="last_visit">Zuletzt: %1$d (%2$s)</string>
+    <string name="last_visit_bust">Bust (%s)</string>
+    <string name="needs_double_in">Beginnt erst nach einem Double</string>
+    <string name="checkout">Checkout: %s</string>
+    <string name="points_short">Pkt</string>
+    <string name="next_target">Nächste</string>
+    <string name="target">Ziel</string>
+    <string name="shanghai_hint">Single + Double + Triple gewinnt sofort</string>
+    <string name="your_double">Double</string>
+    <string name="killer_badge">KILLER</string>
+    <string name="restart">Neu starten</string>
+    <string name="restart_title">Spiel neu starten?</string>
+    <string name="restart_message">Alle Punkte dieses Spiels werden gelöscht. Spieler und Optionen bleiben gleich.</string>
+    <string name="winner">%s gewinnt!</string>
+    <string name="draw">Unentschieden: %s</string>
+    <string name="shanghai_win">Shanghai! Single, Double und Triple in einer Aufnahme.</string>
+    <string name="rematch">Revanche</string>
+    <string name="undo_last_dart">Letzten Pfeil rückgängig machen</string>
+
+    <!-- Instellingen -->
+    <string name="settings_game">Spiel</string>
+    <string name="keep_screen_on">Bildschirm anlassen</string>
+    <string name="keep_screen_on_desc">Der Bildschirm bleibt während eines Spiels an</string>
+    <string name="settings_display">Anzeige</string>
+    <string name="theme">Design</string>
+    <string name="theme_desc">Hell, dunkel oder wie dein Telefon</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="language">Sprache</string>
+    <string name="language_desc">Sprache der App</string>
+    <string name="support_app">Unterstützen</string>
+    <string name="version">Version %s</string>
+
+    <!-- Ko-fi -->
+    <string name="kofi_title">Spendier mir einen Kaffee</string>
+    <string name="kofi_subtitle">Unterstütze Dart Scorer auf Ko-fi</string>
+    <string name="kofi_message">Gefällt dir Dart Scorer? Mit einem kleinen Beitrag über Ko-fi unterstützt du die Weiterentwicklung der App.</string>
+    <string name="kofi_open">Zu Ko-fi</string>
+</resources>

@@ -11,6 +11,9 @@ val AppLanguage.locale: Locale
     get() = when (this) {
         AppLanguage.ENGLISH -> Locale.US
         AppLanguage.DUTCH -> Locale("nl", "NL")
+        AppLanguage.GERMAN -> Locale.GERMANY
+        AppLanguage.FRENCH -> Locale.FRANCE
+        AppLanguage.SPANISH -> Locale("es", "ES")
     }
 
 /**

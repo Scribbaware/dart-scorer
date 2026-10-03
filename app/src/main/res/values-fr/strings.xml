@@ -1,0 +1,105 @@
+<resources>
+    <!-- Algemeen -->
+    <string name="back">Retour</string>
+    <string name="close">Fermer</string>
+    <string name="cancel">Annuler</string>
+    <string name="settings">Paramètres</string>
+    <string name="home">Accueil</string>
+
+    <!-- Startscherm -->
+    <string name="choose_game">Choisir un jeu</string>
+    <string name="game_in_progress">Partie en cours</string>
+    <string name="resume">Reprendre</string>
+
+    <!-- Spellen -->
+    <string name="game_501_desc">Le classique. Descendez de 501 jusqu\'à zéro pile.</string>
+    <string name="game_301_desc">La version rapide du 501.</string>
+    <string name="game_cricket">Cricket</string>
+    <string name="game_cricket_desc">Fermez 15 à 20 et le bull, marquez sur les numéros ouverts.</string>
+    <string name="game_clock">Tour de l\'horloge</string>
+    <string name="game_clock_desc">Touchez 1 à 20 dans l\'ordre, puis le bull.</string>
+    <string name="game_shanghai">Shanghai</string>
+    <string name="game_shanghai_desc">Sept tours, un numéro cible par tour.</string>
+    <string name="game_killer">Killer</string>
+    <string name="game_killer_desc">Devenez killer et prenez les vies de vos amis.</string>
+
+    <string name="rules_x01">Tout le monde commence au score choisi. Chaque fléchette est soustraite de votre score et le premier à atteindre zéro pile gagne la manche. Avec le double out, la dernière fléchette doit être un double (le bull compte comme double 25). Si vous passez sous zéro, ou à 1 avec le double out, c\'est un bust : votre score revient à sa valeur du début du tour. Avec le double in, vos fléchettes ne comptent qu\'après votre premier double.</string>
+    <string name="rules_cricket">Seuls 15 à 20 et le bull comptent. Touchez un numéro trois fois pour le fermer (un double compte pour deux touches, un triple pour trois). Une fois un numéro fermé, les touches suivantes rapportent des points tant qu\'un adversaire ne l\'a pas fermé. Le premier à tout fermer avec au moins autant de points que les autres gagne.</string>
+    <string name="rules_clock">Touchez le 1, puis le 2, puis le 3 et ainsi de suite jusqu\'à 20, et terminez par le bull (intérieur ou extérieur). Toutes les zones du numéro comptent. Avec « Double et triple font avancer », un double vous fait avancer de deux numéros et un triple de trois. Le premier à toucher le bull gagne.</string>
+    <string name="rules_shanghai">Au tour 1 seul le 1 compte, au tour 2 seul le 2, et ainsi de suite. Chaque touche rapporte sa valeur multipliée. Un Shanghai (simple, double et triple de la cible dans un même tour) gagne immédiatement. Sinon, le meilleur score après le dernier tour gagne.</string>
+    <string name="rules_killer">Chaque joueur reçoit son propre numéro. Touchez le double de votre numéro pour devenir killer. En tant que killer, chaque double du numéro d\'un adversaire lui retire une vie, mais attention : votre propre double vous coûte une vie. Un joueur sans vie est éliminé. Le dernier joueur en lice gagne.</string>
+
+    <!-- Spel instellen -->
+    <string name="players">Joueurs</string>
+    <string name="player_default">Joueur</string>
+    <string name="add_player">Ajouter un joueur</string>
+    <string name="remove_player">Retirer le joueur</string>
+    <string name="shuffle">Mélanger</string>
+    <string name="min_players">Ce jeu nécessite au moins %d joueurs.</string>
+    <string name="options">Options</string>
+    <string name="start_score">Score de départ</string>
+    <string name="double_out">Double out</string>
+    <string name="double_out_desc">Finir sur un double ou le bull</string>
+    <string name="double_in">Double in</string>
+    <string name="double_in_desc">Marquer seulement après votre premier double</string>
+    <string name="legs_to_win">Manches à gagner</string>
+    <string name="multipliers_skip">Double et triple font avancer</string>
+    <string name="multipliers_skip_desc">Un double fait avancer de 2, un triple de 3</string>
+    <string name="rounds">Tours</string>
+    <string name="lives">Vies</string>
+    <string name="how_to_play">Comment jouer</string>
+    <string name="start_game">Commencer</string>
+
+    <!-- Tijdens het spel -->
+    <string name="single">Simple</string>
+    <string name="double_">Double</string>
+    <string name="treble">Triple</string>
+    <string name="miss">Raté</string>
+    <string name="undo">Annuler</string>
+    <string name="bull">Bull</string>
+    <string name="round">Tour %d</string>
+    <string name="round_of">Tour %1$d sur %2$d</string>
+    <string name="leg">Manche %d</string>
+    <string name="legs_won">Manches %d</string>
+    <string name="average">Moy. %s</string>
+    <string name="darts_thrown">%d fléchettes</string>
+    <string name="last_visit">Dernier : %1$d (%2$s)</string>
+    <string name="last_visit_bust">Bust (%s)</string>
+    <string name="needs_double_in">Commence après un double</string>
+    <string name="checkout">Finish : %s</string>
+    <string name="points_short">Pts</string>
+    <string name="next_target">Suivant</string>
+    <string name="target">Cible</string>
+    <string name="shanghai_hint">Simple + double + triple gagne immédiatement</string>
+    <string name="your_double">Double</string>
+    <string name="killer_badge">KILLER</string>
+    <string name="restart">Recommencer</string>
+    <string name="restart_title">Recommencer la partie ?</string>
+    <string name="restart_message">Tous les scores de cette partie seront effacés. Les joueurs et les options restent les mêmes.</string>
+    <string name="winner">%s gagne !</string>
+    <string name="draw">Égalité : %s</string>
+    <string name="shanghai_win">Shanghai ! Simple, double et triple en un tour.</string>
+    <string name="rematch">Revanche</string>
+    <string name="undo_last_dart">Annuler la dernière fléchette</string>
+
+    <!-- Instellingen -->
+    <string name="settings_game">Partie</string>
+    <string name="keep_screen_on">Garder l\'écran allumé</string>
+    <string name="keep_screen_on_desc">L\'écran reste allumé pendant une partie</string>
+    <string name="settings_display">Affichage</string>
+    <string name="theme">Thème</string>
+    <string name="theme_desc">Clair, sombre ou comme votre téléphone</string>
+    <string name="theme_system">Système</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="language">Langue</string>
+    <string name="language_desc">Langue de l\'application</string>
+    <string name="support_app">Soutenir</string>
+    <string name="version">Version %s</string>
+
+    <!-- Ko-fi -->
+    <string name="kofi_title">Offrez-moi un café</string>
+    <string name="kofi_subtitle">Soutenez Dart Scorer sur Ko-fi</string>
+    <string name="kofi_message">Vous aimez Dart Scorer ? Une petite contribution via Ko-fi soutient le développement de l\'application.</string>
+    <string name="kofi_open">Aller sur Ko-fi</string>
+</resources>
