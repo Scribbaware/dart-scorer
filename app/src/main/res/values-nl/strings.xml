@@ -1,0 +1,105 @@
+<resources>
+    <!-- Algemeen -->
+    <string name="back">Terug</string>
+    <string name="close">Sluiten</string>
+    <string name="cancel">Annuleren</string>
+    <string name="settings">Instellingen</string>
+    <string name="home">Startscherm</string>
+
+    <!-- Startscherm -->
+    <string name="choose_game">Kies een spel</string>
+    <string name="game_in_progress">Spel bezig</string>
+    <string name="resume">Verder</string>
+
+    <!-- Spellen -->
+    <string name="game_501_desc">De klassieker. Tel af van 501 naar precies nul.</string>
+    <string name="game_301_desc">De snellere versie van 501.</string>
+    <string name="game_cricket">Cricket</string>
+    <string name="game_cricket_desc">Sluit 15 t/m 20 en de bull, scoor op open nummers.</string>
+    <string name="game_clock">Around the Clock</string>
+    <string name="game_clock_desc">Gooi 1 t/m 20 op volgorde, daarna de bull.</string>
+    <string name="game_shanghai">Shanghai</string>
+    <string name="game_shanghai_desc">Zeven rondes, elke ronde één doelnummer.</string>
+    <string name="game_killer">Killer</string>
+    <string name="game_killer_desc">Word killer en pak de levens van je vrienden af.</string>
+
+    <string name="rules_x01">Iedereen begint op de gekozen score. Elke pijl gaat van je score af en wie als eerste op precies nul uitkomt, wint de leg. Met double out moet je laatste pijl een dubbel zijn (de bull telt als dubbel 25). Kom je onder nul, of op 1 met double out, dan is het een bust: je score gaat terug naar wat hij aan het begin van de beurt was. Met double in tellen je pijlen pas na je eerste dubbel.</string>
+    <string name="rules_cricket">Alleen 15 t/m 20 en de bull tellen. Raak een nummer drie keer om het te sluiten (een dubbel telt als twee hits, een triple als drie). Heb jij een nummer gesloten, dan leveren extra hits punten op zolang een tegenstander het nog niet heeft gesloten. Wie als eerste alles sluit en minstens evenveel punten heeft als de rest, wint.</string>
+    <string name="rules_clock">Gooi de 1, dan de 2, dan de 3 enzovoort tot en met 20, en sluit af met de bull (binnen of buiten). Elk vak van het nummer telt. Met \"Dubbel en triple slaan over\" ga je met een dubbel twee nummers vooruit en met een triple drie. Wie als eerste de bull raakt, wint.</string>
+    <string name="rules_shanghai">In ronde 1 telt alleen de 1, in ronde 2 alleen de 2, enzovoort. Elke hit levert de waarde maal de multiplier op. Een Shanghai (enkel, dubbel en triple van het doelnummer in één beurt) wint direct. Anders wint de hoogste score na de laatste ronde.</string>
+    <string name="rules_killer">Iedere speler krijgt een eigen nummer. Raak de dubbel van jouw nummer om killer te worden. Als killer kost elke dubbel van het nummer van een tegenstander hem een leven, maar let op: je eigen dubbel kost jou een leven. Wie geen levens meer heeft, ligt eruit. Wie als laatste overblijft, wint.</string>
+
+    <!-- Spel instellen -->
+    <string name="players">Spelers</string>
+    <string name="player_default">Speler</string>
+    <string name="add_player">Speler toevoegen</string>
+    <string name="remove_player">Speler verwijderen</string>
+    <string name="shuffle">Husselen</string>
+    <string name="min_players">Voor dit spel heb je minstens %d spelers nodig.</string>
+    <string name="options">Opties</string>
+    <string name="start_score">Startscore</string>
+    <string name="double_out">Double out</string>
+    <string name="double_out_desc">Uitgooien op een dubbel of de bull</string>
+    <string name="double_in">Double in</string>
+    <string name="double_in_desc">Pas scoren na je eerste dubbel</string>
+    <string name="legs_to_win">Legs om te winnen</string>
+    <string name="multipliers_skip">Dubbel en triple slaan over</string>
+    <string name="multipliers_skip_desc">Een dubbel is 2 vooruit, een triple 3</string>
+    <string name="rounds">Rondes</string>
+    <string name="lives">Levens</string>
+    <string name="how_to_play">Zo speel je het</string>
+    <string name="start_game">Start spel</string>
+
+    <!-- Tijdens het spel -->
+    <string name="single">Enkel</string>
+    <string name="double_">Dubbel</string>
+    <string name="treble">Triple</string>
+    <string name="miss">Mis</string>
+    <string name="undo">Herstel</string>
+    <string name="bull">Bull</string>
+    <string name="round">Ronde %d</string>
+    <string name="round_of">Ronde %1$d van %2$d</string>
+    <string name="leg">Leg %d</string>
+    <string name="legs_won">Legs %d</string>
+    <string name="average">Gem. %s</string>
+    <string name="darts_thrown">%d pijlen</string>
+    <string name="last_visit">Vorige: %1$d (%2$s)</string>
+    <string name="last_visit_bust">Bust (%s)</string>
+    <string name="needs_double_in">Begint pas na een dubbel</string>
+    <string name="checkout">Uitgooien: %s</string>
+    <string name="points_short">Ptn</string>
+    <string name="next_target">Volgende</string>
+    <string name="target">Doel</string>
+    <string name="shanghai_hint">Enkel + dubbel + triple wint direct</string>
+    <string name="your_double">Dubbel</string>
+    <string name="killer_badge">KILLER</string>
+    <string name="restart">Opnieuw</string>
+    <string name="restart_title">Spel opnieuw beginnen?</string>
+    <string name="restart_message">Alle scores van dit spel worden gewist. De spelers en opties blijven hetzelfde.</string>
+    <string name="winner">%s wint!</string>
+    <string name="draw">Gelijkspel: %s</string>
+    <string name="shanghai_win">Shanghai! Enkel, dubbel en triple in één beurt.</string>
+    <string name="rematch">Nog een potje</string>
+    <string name="undo_last_dart">Laatste pijl herstellen</string>
+
+    <!-- Instellingen -->
+    <string name="settings_game">Spel</string>
+    <string name="keep_screen_on">Scherm aan laten</string>
+    <string name="keep_screen_on_desc">Het scherm blijft aan tijdens een spel</string>
+    <string name="settings_display">Weergave</string>
+    <string name="theme">Thema</string>
+    <string name="theme_desc">Licht, donker of zoals je telefoon</string>
+    <string name="theme_system">Systeem</string>
+    <string name="theme_light">Licht</string>
+    <string name="theme_dark">Donker</string>
+    <string name="language">Taal</string>
+    <string name="language_desc">Taal van de app</string>
+    <string name="support_app">Steunen</string>
+    <string name="version">Versie %s</string>
+
+    <!-- Ko-fi -->
+    <string name="kofi_title">Trakteer op een koffie</string>
+    <string name="kofi_subtitle">Steun Dart Scorer via Ko-fi</string>
+    <string name="kofi_message">Vind je Dart Scorer fijn? Met een kleine bijdrage via Ko-fi steun je de verdere ontwikkeling van de app.</string>
+    <string name="kofi_open">Naar Ko-fi</string>
+</resources>

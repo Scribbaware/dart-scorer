@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name" translatable="false">Dart Scorer</string>
+
+    <!-- Algemeen -->
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+
+    <!-- Startscherm -->
+    <string name="choose_game">Choose a game</string>
+    <string name="game_in_progress">Game in progress</string>
+    <string name="resume">Resume</string>
+
+    <!-- Spellen -->
+    <string name="game_501" translatable="false">501</string>
+    <string name="game_501_desc">The classic. Count down from 501 to exactly zero.</string>
+    <string name="game_301" translatable="false">301</string>
+    <string name="game_301_desc">The quicker version of 501.</string>
+    <string name="game_cricket">Cricket</string>
+    <string name="game_cricket_desc">Close 15 to 20 and the bull, score on open numbers.</string>
+    <string name="game_clock">Around the Clock</string>
+    <string name="game_clock_desc">Hit 1 to 20 in order, then the bull.</string>
+    <string name="game_shanghai">Shanghai</string>
+    <string name="game_shanghai_desc">Seven rounds, one target number per round.</string>
+    <string name="game_killer">Killer</string>
+    <string name="game_killer_desc">Become a killer and take your friends\' lives.</string>
+
+    <string name="rules_x01">Everyone starts at the chosen score. Each dart is subtracted from your score and the first to reach exactly zero wins the leg. With double out, the last dart must be a double (the bull counts as double 25). Going below zero, or to 1 with double out, is a bust: your score goes back to what it was at the start of the turn. With double in, your darts only count after your first double.</string>
+    <string name="rules_cricket">Only 15 to 20 and the bull count. Hit a number three times to close it (a double counts as two hits, a treble as three). Once you\'ve closed a number, extra hits score points as long as an opponent hasn\'t closed it yet. The first player to close everything with at least as many points as everyone else wins.</string>
+    <string name="rules_clock">Hit 1, then 2, then 3 and so on up to 20, and finish with the bull (outer or inner). Every segment of the number counts. With \"Doubles and trebles skip\", a double moves you two numbers ahead and a treble three. The first player to hit the bull wins.</string>
+    <string name="rules_shanghai">In round 1 only the 1 counts, in round 2 only the 2, and so on. Each hit scores its value times the multiplier. A Shanghai (a single, double and treble of the target in one turn) wins the game immediately. Otherwise the highest score after the last round wins.</string>
+    <string name="rules_killer">Every player gets their own number. Hit the double of your number to become a killer. As a killer, every double of an opponent\'s number takes one of their lives, but watch out: hitting your own double costs you a life. Players without lives are out. The last player standing wins.</string>
+
+    <!-- Spel instellen -->
+    <string name="players">Players</string>
+    <string name="player_default">Player</string>
+    <string name="add_player">Add player</string>
+    <string name="remove_player">Remove player</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="min_players">This game needs at least %d players.</string>
+    <string name="options">Options</string>
+    <string name="start_score">Starting score</string>
+    <string name="double_out">Double out</string>
+    <string name="double_out_desc">Finish on a double or the bull</string>
+    <string name="double_in">Double in</string>
+    <string name="double_in_desc">Start scoring after your first double</string>
+    <string name="legs_to_win">Legs to win</string>
+    <string name="multipliers_skip">Doubles and trebles skip</string>
+    <string name="multipliers_skip_desc">A double moves you 2 ahead, a treble 3</string>
+    <string name="rounds">Rounds</string>
+    <string name="lives">Lives</string>
+    <string name="how_to_play">How to play</string>
+    <string name="start_game">Start game</string>
+
+    <!-- Tijdens het spel -->
+    <string name="single">Single</string>
+    <string name="double_">Double</string>
+    <string name="treble">Treble</string>
+    <string name="miss">Miss</string>
+    <string name="undo">Undo</string>
+    <string name="bull">Bull</string>
+    <string name="round">Round %d</string>
+    <string name="round_of">Round %1$d of %2$d</string>
+    <string name="leg">Leg %d</string>
+    <string name="legs_won">Legs %d</string>
+    <string name="average">Avg %s</string>
+    <string name="darts_thrown">%d darts</string>
+    <string name="last_visit">Last: %1$d (%2$s)</string>
+    <string name="last_visit_bust">Bust (%s)</string>
+    <string name="needs_double_in">Needs a double to start</string>
+    <string name="checkout">Checkout: %s</string>
+    <string name="points_short">Pts</string>
+    <string name="next_target">Next</string>
+    <string name="target">Target</string>
+    <string name="shanghai_hint">Single + double + treble wins instantly</string>
+    <string name="your_double">Double</string>
+    <string name="killer_badge">KILLER</string>
+    <string name="restart">Restart</string>
+    <string name="restart_title">Restart game?</string>
+    <string name="restart_message">All scores of this game will be reset. The players and options stay the same.</string>
+    <string name="winner">%s wins!</string>
+    <string name="draw">Draw: %s</string>
+    <string name="shanghai_win">Shanghai! Single, double and treble in one turn.</string>
+    <string name="rematch">Rematch</string>
+    <string name="undo_last_dart">Undo last dart</string>
+
+    <!-- Instellingen -->
+    <string name="settings_game">Game</string>
+    <string name="keep_screen_on">Keep screen on</string>
+    <string name="keep_screen_on_desc">The screen stays on during a game</string>
+    <string name="settings_display">Display</string>
+    <string name="theme">Theme</string>
+    <string name="theme_desc">Light, dark, or follow your phone</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="language">Language</string>
+    <string name="language_desc">Language of the app</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_dutch" translatable="false">Nederlands</string>
+    <string name="support_app">Support</string>
+    <string name="version">Version %s</string>
+
+    <!-- Ko-fi -->
+    <string name="kofi_title">Buy me a coffee</string>
+    <string name="kofi_subtitle">Support Dart Scorer on Ko-fi</string>
+    <string name="kofi_message">Enjoying Dart Scorer? A small contribution via Ko-fi supports the further development of the app.</string>
+    <string name="kofi_open">Go to Ko-fi</string>
+</resources>
