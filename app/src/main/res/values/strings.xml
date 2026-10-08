@@ -98,8 +98,6 @@
     <string name="theme_dark">Dark</string>
     <string name="language">Language</string>
     <string name="language_desc">Language of the app</string>
-    <string name="language_english" translatable="false">English</string>
-    <string name="language_dutch" translatable="false">Nederlands</string>
     <string name="support_app">Support</string>
     <string name="version">Version %s</string>
 

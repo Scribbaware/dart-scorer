@@ -135,6 +135,24 @@ class ScreenshotTest(private val dark: Boolean) {
     }
 
     @Test
+    @Config(qualifiers = "+de")
+    fun settingsGerman() = snap("10_settings_de") {
+        SettingsScreen(Settings(language = AppLanguage.GERMAN), {}, {}, {}, {})
+    }
+
+    @Test
+    @Config(qualifiers = "+fr")
+    fun setupFrench() = snap("3_setup_501_fr") {
+        SetupScreen(GamePreset.X501, players, onStart = { _, _ -> }, onBack = {})
+    }
+
+    @Test
+    @Config(qualifiers = "+es")
+    fun homeSpanish() = snap("1_home_es") {
+        HomeScreen(match = Match(X01Config(), players), onChoose = {}, onResume = {}, onOpenSettings = {})
+    }
+
+    @Test
     @Config(qualifiers = "+nl")
     fun x01Dutch() = snap("4_game_501_nl") {
         game(Match(X01Config(), players, listOf(t(20), t(20), s(20))))
