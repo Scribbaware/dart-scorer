@@ -69,6 +69,13 @@ android {
         compose = true
         buildConfig = true
     }
+    // De taal kies je in de app zelf. Play Store installeert anders alleen de taal van de telefoon,
+    // en dan zou een andere gekozen taal ontbreken. Daarom alle talen altijd meeleveren.
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
 }
 
 dependencies {
