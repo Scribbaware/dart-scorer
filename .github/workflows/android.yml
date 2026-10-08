@@ -37,7 +37,8 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
 
-      # Optioneel: een gesigneerde release-APK, alleen als de signing-secrets zijn ingesteld.
+      # Optioneel: gesigneerde release-builds, alleen als de signing-secrets zijn ingesteld.
+      # De AAB (App Bundle) is het bestand dat je in de Play Console uploadt.
       - name: Release-keystore klaarzetten
         id: keystore
         env:
@@ -47,14 +48,14 @@ jobs:
           echo "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/release.jks"
           echo "path=$RUNNER_TEMP/release.jks" >> "$GITHUB_OUTPUT"
 
-      - name: Release-APK bouwen
+      - name: Release-APK en -AAB bouwen
         if: ${{ steps.keystore.outputs.path != '' }}
         env:
           RELEASE_STORE_FILE: ${{ steps.keystore.outputs.path }}
           RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
           RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
           RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
-        run: ./gradlew :app:assembleRelease
+        run: ./gradlew :app:assembleRelease :app:bundleRelease
 
       - name: Release-APK uploaden
         if: ${{ steps.keystore.outputs.path != '' }}
@@ -63,6 +64,18 @@ jobs:
           name: dart-scorer-release-apk
           path: app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
+
+      - name: Release-AAB uploaden (voor de Play Store)
+        if: ${{ steps.keystore.outputs.path != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dart-scorer-release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+
+      - name: Melding als signing-secrets ontbreken
+        if: ${{ steps.keystore.outputs.path == '' }}
+        run: echo "::notice::Geen RELEASE_*-secrets ingesteld; daarom geen gesigneerde release-APK en -AAB. Zie README."
 
       - name: Screenshots uploaden
         if: always()

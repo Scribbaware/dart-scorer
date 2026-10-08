@@ -52,8 +52,9 @@ Bij elke push naar `main` en bij elke pull request bouwt GitHub Actions de app e
 Debug-builds worden gesigneerd met een vaste sleutel (`app/debug.keystore`), zodat een nieuwe APK
 gewoon over de oude heen installeert.
 
-**Optioneel: gesigneerde release-APK.** Voeg bij *Settings → Secrets and variables → Actions* deze vier
-secrets toe, dan levert elke build ook `dart-scorer-release-apk` op:
+**Optioneel: gesigneerde release-builds.** Voeg bij *Settings → Secrets and variables → Actions* deze vier
+secrets toe, dan levert elke build ook `dart-scorer-release-apk` en `dart-scorer-release-aab` op. De AAB (App Bundle)
+is het bestand dat je in de Play Console uploadt:
 
 | Secret | Waarde |
 | --- | --- |
@@ -72,6 +73,30 @@ secrets toe, dan levert elke build ook `dart-scorer-release-apk` op:
 
 De screenshottests (Robolectric) renderen de schermen in licht en donker naar `app/build/screenshots/`,
 zodat je design-wijzigingen kunt controleren zonder emulator. In CI staan ze bij de artifacts als `screenshots`.
+
+## Gesigneerde release-build
+
+1. **Maak een keystore** (eenmalig, en bewaar hem goed: zonder deze sleutel kun je geen updates uitbrengen):
+   ```bash
+   keytool -genkey -v -keystore dart-scorer-release.jks -keyalg RSA -keysize 2048 -validity 10000 -alias dartscorer
+   ```
+2. **Zet de secrets** uit de tabel hierboven in GitHub. De volgende run van **Android build** levert dan
+   `dart-scorer-release-aab` op. Of bouw lokaal met `keystore.properties` in de hoofdmap (staat in `.gitignore`):
+   ```properties
+   storeFile=dart-scorer-release.jks
+   storePassword=•••
+   keyAlias=dartscorer
+   keyPassword=•••
+   ```
+   ```bash
+   ./gradlew :app:bundleRelease     # app/build/outputs/bundle/release/app-release.aab
+   ./gradlew :app:assembleRelease   # app/build/outputs/apk/release/app-release.apk
+   ```
+3. Verhoog `versionCode` (en `versionName`) in `app/build.gradle.kts` bij elke nieuwe release; Google Play
+   weigert een AAB met een `versionCode` die al eerder is geüpload.
+4. Zet in de Play Console **Play App Signing** aan; jouw keystore wordt dan de *upload key*.
+
+Alle talen zitten altijd in de AAB (geen taal-splits), omdat je de taal in de app zelf kiest.
 
 ## Lettertypes
 
