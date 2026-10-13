@@ -99,7 +99,7 @@
 
     <!-- Ko-fi -->
     <string name="kofi_title">Trakteer op een koffie</string>
-    <string name="kofi_subtitle">Steun Dart Scorer via Ko-fi</string>
-    <string name="kofi_message">Vind je Dart Scorer fijn? Met een kleine bijdrage via Ko-fi steun je de verdere ontwikkeling van de app.</string>
+    <string name="kofi_subtitle">Steun Scribba Darts via Ko-fi</string>
+    <string name="kofi_message">Vind je Scribba Darts fijn? Met een kleine bijdrage via Ko-fi steun je de verdere ontwikkeling van de app.</string>
     <string name="kofi_open">Naar Ko-fi</string>
 </resources>
