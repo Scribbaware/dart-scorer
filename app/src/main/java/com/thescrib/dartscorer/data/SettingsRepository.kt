@@ -13,15 +13,18 @@ import java.util.Locale
 
 enum class ThemeMode { SYSTEM, LIGHT, DARK }
 
-/** Taal van de app; [tag] is de BCP-47-code voor de resources. */
-enum class AppLanguage(val tag: String) {
-    ENGLISH("en"),
-    DUTCH("nl");
+/** Taal van de app; [tag] is de BCP-47-code voor de resources, [nativeName] de naam in die taal zelf. */
+enum class AppLanguage(val tag: String, val nativeName: String) {
+    ENGLISH("en", "English"),
+    DUTCH("nl", "Nederlands"),
+    GERMAN("de", "Deutsch"),
+    FRENCH("fr", "Français"),
+    SPANISH("es", "Español");
 
     companion object {
-        /** Zolang je niets kiest: Nederlands op een Nederlandstalige telefoon, anders Engels. */
+        /** Zolang je niets kiest: de taal van de telefoon als de app die kent, anders Engels. */
         fun fromSystem(locale: Locale = Locale.getDefault()): AppLanguage =
-            if (locale.language == DUTCH.tag) DUTCH else ENGLISH
+            entries.firstOrNull { it.tag == locale.language } ?: ENGLISH
     }
 }
 

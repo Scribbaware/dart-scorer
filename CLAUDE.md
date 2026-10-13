@@ -9,7 +9,7 @@ Richtlijnen voor Claude bij het werken aan deze repository.
 - De eigenaar is beginner: leg keuzes kort en begrijpelijk uit, zonder jargon waar dat kan. Geef bij handelingen op
   GitHub of de telefoon concrete stappen (waar klikken, wat kiezen).
 - Houd berichten kort: wat er gedaan is, wat de eigenaar eventueel moet doen, en links naar de PR of de build.
-- UI-teksten in de app zijn Engels en Nederlands (beide bijhouden). Code, identifiers en commitberichten zijn Engels; uitleggende codecommentaar
+- UI-teksten in de app zijn Engels, Nederlands, Duits, Frans en Spaans (alle vijf bijhouden). Code, identifiers en commitberichten zijn Engels; uitleggende codecommentaar
   en PR-beschrijvingen zijn Nederlands.
 
 ## Werkwijze: alles automatisch
@@ -70,7 +70,7 @@ app/src/main/java/com/thescrib/dartscorer/
 - Spelregels zijn pure functies (`GameRules.throwDart`); een `Match` is instellingen + spelers + pijlen, en de stand
   wordt opnieuw afgespeeld. Undo = laatste pijl weglaten. Voeg een nieuw spel toe als `GameConfig` + `GameRules`,
   met een `GamePreset` voor het startscherm, een scorebord in `Scoreboards.kt` en een regel in `MatchCodec`.
-- Elke tekst staat in `values/strings.xml` (Engels) én `values-nl/strings.xml` (Nederlands).
+- Elke tekst staat in `values/strings.xml` (Engels) en in `values-nl`, `values-de`, `values-fr` en `values-es`. Een nieuwe taal: map `values-xx`, een waarde in `AppLanguage` en een `Locale` in `Localization.kt`.
 - Dependency injection gebeurt handmatig via `AppContainer` in `DartScorerApp`.
 
 ## Design

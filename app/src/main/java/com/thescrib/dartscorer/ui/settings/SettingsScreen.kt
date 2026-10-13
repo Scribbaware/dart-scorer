@@ -6,10 +6,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -26,6 +29,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LargeTopAppBar
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
@@ -137,7 +141,7 @@ fun SettingsScreen(
                         }
                     }
                     HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
-                    Column(Modifier.padding(16.dp)) {
+                    Column(Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp)) {
                         Text(stringResource(R.string.language), style = MaterialTheme.typography.titleMedium)
                         Text(
                             stringResource(R.string.language_desc),
@@ -145,26 +149,12 @@ fun SettingsScreen(
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.padding(bottom = 12.dp),
                         )
-                        // Taalnamen staan altijd in hun eigen taal, zodat je ze herkent.
-                        val languages = listOf(
-                            AppLanguage.ENGLISH to stringResource(R.string.language_english),
-                            AppLanguage.DUTCH to stringResource(R.string.language_dutch),
-                        )
-                        SingleChoiceSegmentedButtonRow(Modifier.fillMaxWidth()) {
-                            languages.forEachIndexed { i, (language, label) ->
-                                SegmentedButton(
-                                    selected = settings.language == language,
-                                    onClick = { onLanguage(language) },
-                                    shape = SegmentedButtonDefaults.itemShape(i, languages.size),
-                                    icon = {},
-                                    colors = SegmentedButtonDefaults.colors(
-                                        activeContainerColor = MaterialTheme.colorScheme.primaryContainer,
-                                        activeContentColor = MaterialTheme.colorScheme.onPrimaryContainer,
-                                    ),
-                                ) { Text(label) }
-                            }
-                        }
                     }
+                    // Taalnamen staan altijd in hun eigen taal, zodat je ze herkent.
+                    AppLanguage.entries.forEach { language ->
+                        LanguageRow(language.nativeName, settings.language == language) { onLanguage(language) }
+                    }
+                    Spacer(Modifier.height(8.dp))
                 }
             }
 
@@ -229,6 +219,21 @@ internal fun KofiCard(onClick: () -> Unit) {
                 modifier = Modifier.size(20.dp),
             )
         }
+    }
+}
+
+/** Eén taal in de lijst, met een rondje dat aangeeft welke gekozen is. */
+@Composable
+private fun LanguageRow(name: String, selected: Boolean, onClick: () -> Unit) {
+    Row(
+        Modifier
+            .fillMaxWidth()
+            .selectable(selected = selected, onClick = onClick, role = Role.RadioButton)
+            .padding(horizontal = 8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        RadioButton(selected = selected, onClick = null, modifier = Modifier.padding(8.dp))
+        Text(name, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.padding(start = 4.dp))
     }
 }
 
