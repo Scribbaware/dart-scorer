@@ -99,7 +99,7 @@
 
     <!-- Ko-fi -->
     <string name="kofi_title">Spendier mir einen Kaffee</string>
-    <string name="kofi_subtitle">Unterstütze Dart Scorer auf Ko-fi</string>
-    <string name="kofi_message">Gefällt dir Dart Scorer? Mit einem kleinen Beitrag über Ko-fi unterstützt du die Weiterentwicklung der App.</string>
+    <string name="kofi_subtitle">Unterstütze Scribba Darts auf Ko-fi</string>
+    <string name="kofi_message">Gefällt dir Scribba Darts? Mit einem kleinen Beitrag über Ko-fi unterstützt du die Weiterentwicklung der App.</string>
     <string name="kofi_open">Zu Ko-fi</string>
 </resources>

@@ -56,7 +56,7 @@ Vraag eerst om akkoord als een wijziging:
 
 ## Project
 
-Android-app om darts te scoren: Kotlin, Jetpack Compose, DataStore en Material 3 (minSdk 26, targetSdk 35).
+Android-app om darts te scoren: Kotlin, Jetpack Compose, DataStore en Material 3 (minSdk 26, targetSdk 36).
 Spellen: 501/301 (X01), Cricket, Around the Clock, Shanghai en Killer. Zie de README voor functies en keuzes.
 
 ```
@@ -83,6 +83,10 @@ app/src/main/java/com/thescrib/dartscorer/
 - Lettertypes: Space Grotesk voor koppen en cijfers, Inter voor tekst. Gebruik `TABULAR` voor scores, zodat cijfers niet verspringen.
 - Controleer UI-wijzigingen met de screenshottests. Voeg een nieuw scherm toe aan `ScreenshotTest` en bekijk de PNG's:
   `./gradlew :app:testDebugUnitTest --tests '*ScreenshotTest*'` → `app/build/screenshots/`
+- Play Store-afbeeldingen (icoon, feature graphic, screenshots per taal) komen uit `StoreGraphicsTest`:
+  `./gradlew :app:testDebugUnitTest --tests '*Store*'` → `app/build/store/`. De Play-naam is "Scribba Darts".
+- De app heeft geen internetpermissie en verzamelt geen gegevens (zie `PRIVACY.md`). Verandert dat, werk dan
+  `PRIVACY.md` bij en zeg de eigenaar dat het Data safety-formulier in de Play Console aangepast moet worden.
 
 ## Commando's
 
@@ -93,5 +97,5 @@ app/src/main/java/com/thescrib/dartscorer/
 ```
 
 In een cloudsessie zonder Android SDK: installeer de command-line tools in `/opt/android-sdk` met
-`platforms;android-35`, `build-tools;35.0.0` en `platform-tools`, en zet `sdk.dir=/opt/android-sdk` in
+`platforms;android-36`, `build-tools;35.0.0` en `platform-tools`, en zet `sdk.dir=/opt/android-sdk` in
 `local.properties` (dat bestand staat niet in git).

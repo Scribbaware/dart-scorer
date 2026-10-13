@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Dart Scorer</string>
+    <string name="app_name" translatable="false">Scribba Darts</string>
 
     <!-- Algemeen -->
     <string name="back">Back</string>
@@ -103,7 +103,7 @@
 
     <!-- Ko-fi -->
     <string name="kofi_title">Buy me a coffee</string>
-    <string name="kofi_subtitle">Support Dart Scorer on Ko-fi</string>
-    <string name="kofi_message">Enjoying Dart Scorer? A small contribution via Ko-fi supports the further development of the app.</string>
+    <string name="kofi_subtitle">Support Scribba Darts on Ko-fi</string>
+    <string name="kofi_message">Enjoying Scribba Darts? A small contribution via Ko-fi supports the further development of the app.</string>
     <string name="kofi_open">Go to Ko-fi</string>
 </resources>

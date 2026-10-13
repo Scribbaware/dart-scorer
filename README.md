@@ -1,7 +1,7 @@
-# Dart Scorer
+# Scribba Darts
 
 Een strakke Android-app om darts bij te houden, gebouwd met Kotlin, Jetpack Compose en Material 3
-(minSdk 26, targetSdk 35). Engels, Nederlands, Duits, Frans en Spaans, licht en donker thema.
+(minSdk 26, targetSdk 36). Engels, Nederlands, Duits, Frans en Spaans, licht en donker thema.
 
 ## Spellen
 
@@ -73,6 +73,15 @@ is het bestand dat je in de Play Console uploadt:
 
 De screenshottests (Robolectric) renderen de schermen in licht en donker naar `app/build/screenshots/`,
 zodat je design-wijzigingen kunt controleren zonder emulator. In CI staan ze bij de artifacts als `screenshots`.
+
+**Afbeeldingen voor de Play Store** maak je met
+`./gradlew :app:testDebugUnitTest --tests '*Store*'` (`StoreGraphicsTest.kt`). Ze komen in `app/build/store/`:
+`icon_512.png`, `feature_graphic_1024x500.jpg` en per taal zeven telefoon-screenshots van 1200×2133.
+
+## Privacy
+
+De app verzamelt geen gegevens en heeft geen internettoegang; zie [PRIVACY.md](PRIVACY.md). Dat is ook de link
+voor het privacybeleid in de Play Console.
 
 ## Gesigneerde release-build
 
